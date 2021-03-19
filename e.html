@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>odgłosy zwierząt</title>
+
+	
+	
+	<link rel="stylesheet" href="ee.css">
+    
+	
+	
+	
+</head>
+
+<body>
+
+	
+	<main>
+	
+		<article>
+		
+
+			<div class="container">
+			
+				<header>
+					<h1>Odgłosy zwierząt</h1>
+				</header>
+			
+				<div class="animal">
+				
+					<div class="photo"> 
+						
+                        
+                      <img src="doggo.jpg" width="300" height="225" onclick="play('muzyka1')">
+                       
+					</div>
+					<p>PIES</p>
+					<button id="button_stop">Stop</button>
+    <button id="button_play">Play</button>
+	<script>
+	  var snd = new Audio("szczek.wav");
+        snd.loop = true;
+        snd.autoplay = false;
+
+        document.getElementById("button_stop").onclick = function () { snd.pause(); };
+
+        document.getElementById("button_play").onclick = function () { snd.play(); };
+		</script>
+                     
+					
+				</div>
+				
+				<div class="animal">
+				
+					<div class="photo"> 
+						<img src="BIG.jpg" alt="kot"width="300" height="225"></a>
+					</div>
+					<p>KOT</p>
+									<button id="button_stop1">Stop</button>
+    <button id="button_play1">Play</button>
+		<script>
+	  var snd1 = new Audio("cat.mp3");
+        snd1.loop = true;
+        snd1.autoplay = false;
+
+        document.getElementById("button_stop1").onclick = function () { snd1.pause(); };
+
+        document.getElementById("button_play1").onclick = function () { snd1.play(); };
+		</script>
+					
+				</div>
+				
+					
+	
+			
+				<div class="animal">
+				
+					<div class="photo"> 
+						
+							<img src="cowz.jpg" alt="krowa"width="300" height="225">
+							
+	
+	
+					</div>
+					<p>KROWA</p>
+	<button id="button_stop2">Stop</button>
+    <button id="button_play2">Play</button>
+		<script>
+	  var snd2 = new Audio("cow.mp3");
+        snd2.loop = true;
+        snd2.autoplay = false;
+
+        document.getElementById("button_stop2").onclick = function () { snd2.pause(); };
+
+        document.getElementById("button_play2").onclick = function () { snd2.play(); };
+		</script>
+					
+				</div>
+				
+					
+				
+
+			
+          </div>				
+
+		</article>
+	
+	</main>
+	
+</body>
+</html>
